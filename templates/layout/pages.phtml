@@ -84,6 +84,29 @@ $this->inlineScript()
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div id="messageModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages</h4>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+      <h3 id="modalBodyStatus" style="text-align: center;"></h3>
+        <p id="modalBodyMessage"></p><hr>
+        <p id="modalBodyDescription"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
     <?php echo $this->inlineScript(); ?>
 </body>
 </html>

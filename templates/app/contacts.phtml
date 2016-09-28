@@ -19,26 +19,27 @@
           </div>
           <h4 class="heading"><span>Send me your problems!</span></h4>
           <p>It will be a pleasure to answer.</p>
-          <form>
+          <!--  <form>-->
             <div class="form-group">
               <label>Name*</label>
-              <input type="text" value="" class="form-control" required />
+              <input type="text" value="" id="name" name="name"  class="form-control" required />
             </div>
             <div class="form-group">
               <label>Email*</label>
-              <input type="email" value="" class="form-control" required/>
+              <input type="email" value="" id="email" name="email" class="form-control" required/>
             </div>
             <div class="form-group">
               <label>Subject</label>
-              <input type="text" value="" class="form-control" required />
+              <input type="text" value="" id="subject" name="subject" class="form-control" required />
             </div>
             <div class="form-group">
               <label>Message*</label>
-              <textarea class="form-control" required></textarea>
+              <textarea class="form-control" id="body" name="body" required></textarea>
             </div>
             <div class="form-group text-right">
-              <input type="submit" value="Send Message" class="btn btn-primary" />
+              <input type="button" value="Send Message" onclick="sendRequestMail()" class="btn btn-primary" />
             </div>
-          </form>
+         <!--  </form> -->
+
         </div>
       </div>

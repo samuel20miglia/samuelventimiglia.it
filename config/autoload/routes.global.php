@@ -12,7 +12,8 @@ return [
             App\Action\ContactAction::class => App\Services\Factory\ContactPageFactory::class,
             App\Action\ResumeAction::class => App\Services\Factory\ResumePageFactory::class,
             App\Action\PortfolioAction::class => App\Services\Factory\PortfolioPageFactory::class,
-            App\Action\BlogAction::class => App\Services\Factory\BlogPageFactory::class
+            App\Action\BlogAction::class => App\Services\Factory\BlogPageFactory::class,
+            App\Action\SendRequestAction::class => App\Services\Factory\SendRequestServiceFactory::class
         ],
     ],
 
@@ -53,6 +54,12 @@ return [
             'path' => '/my/contacts',
             'middleware' => App\Action\ContactAction::class,
             'allowed_methods' => ['GET'],
+         ],
+        [
+            'name' => 'send',
+            'path' => '/send/request',
+            'middleware' => App\Action\SendRequestAction::class,
+            'allowed_methods' => ['POST'],
         ]
     ],
 ];
