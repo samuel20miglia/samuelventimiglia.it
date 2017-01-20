@@ -76,12 +76,35 @@ $this->inlineScript()
             <li><a href="https://www.facebook.com/samuel.ventimiglia84" target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://plus.google.com/u/0/+SamuelVentimiglia/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="https://github.com/Samuel18" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://github.com/samuel20miglia" target="_blank"><i class="fa fa-github"></i></a></li>
             <li><a href="https://it.linkedin.com/in/ventimigliasamuel" target="_blank"><i class="fa fa-linkedin"></i></a></li>
           </ul>
           <p>Copyright 2015 - <?= date('Y') ?>.  www.samuelventimiglia.it All rights reserved.</p>
           </footer>
     </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="messageModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages</h4>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+      <h3 id="modalBodyStatus" style="text-align: center;"></h3>
+        <p id="modalBodyMessage"></p><hr>
+        <p id="modalBodyDescription"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
   </div>
 </div>
     <?php echo $this->inlineScript(); ?>
