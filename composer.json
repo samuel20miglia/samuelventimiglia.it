@@ -1,6 +1,6 @@
 {
   "name" : "samuelventimiglia.it",
-  "description" : "Zend expressive skelton. Begin developing PSR-7 middleware applications in seconds",
+  "description" : "Zend expressive samuelventimiglia's website.",
   "version" : "0.0.1",
   "require" : {
     "php" : "^5.5 || ^7.0",
@@ -20,7 +20,7 @@
     "filp/whoops" : "^1.1 || ^2.0",
     "behat/behat" : "v3.2.1"
   },
-  "license" : "BSD-3-Clause",
+  "license" : "proprietary",
   "autoload-dev" : {
     "psr-4" : {
       "AppTest\\" : "test/AppTest/"
@@ -47,7 +47,7 @@
   },
   "homepage" : "https://github.com/zendframework/zend-expressive-skeleton",
   "authors" : [ {
-    "name" : "Geert Eltink",
-    "homepage" : "https://xtreamwayz.com/"
+    "name" : "Ventimiglia Samuel",
+    "homepage" : "http://samuelventimiglia.it/"
   } ]
 }
