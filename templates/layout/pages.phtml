@@ -1,7 +1,7 @@
 <?php
 $this->plugin('basePath')->setBasePath('/');
 
-$this->headLink()
+$this->headLink(['rel' => 'shortcut icon','type' => 'image/vnd.microsoft.icon','href' => $this->basePath('images/me.jpg')])
     ->prependStylesheet($this->basePath('css/animsition.min.css'))
     ->prependStylesheet($this->basePath('css/heading.css'))
     ->prependStylesheet($this->basePath('css/jquery.mCustomScrollbar.css'))
