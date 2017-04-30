@@ -17,49 +17,49 @@ return [
         ],
     ],
 
-    'routes' => [
-        [
-            'name' => 'home',
-            'path' => '/',
-            'middleware' => App\Action\HomePageAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'about',
-            'path' => '/about',
-            'middleware' => App\Action\AboutAction::class,
-            'allowed_methods' => ['GET'],
-        ],
+//     'routes' => [
+//         [
+//             'name' => 'home',
+//             'path' => '/',
+//             'middleware' => App\Action\HomePageAction::class,
+//             'allowed_methods' => ['GET'],
+//         ],
+//         [
+//             'name' => 'about',
+//             'path' => '/about',
+//             'middleware' => App\Action\AboutAction::class,
+//             'allowed_methods' => ['GET'],
+//         ],
 
-        [
-            'name' => 'resume',
-            'path' => '/get/resume',
-            'middleware' => App\Action\ResumeAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'portfolio',
-            'path' => '/portfolio',
-            'middleware' => App\Action\PortfolioAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'blog',
-            'path' => '/my/blog',
-            'middleware' => App\Action\BlogAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'contacts',
-            'path' => '/my/contacts',
-            'middleware' => App\Action\ContactAction::class,
-            'allowed_methods' => ['GET'],
-         ],
-        [
-            'name' => 'send',
-            'path' => '/send/request',
-            'middleware' => App\Action\SendRequestAction::class,
-            'allowed_methods' => ['POST'],
-        ]
-    ],
+//         [
+//             'name' => 'resume',
+//             'path' => '/get/resume',
+//             'middleware' => App\Action\ResumeAction::class,
+//             'allowed_methods' => ['GET'],
+//         ],
+//         [
+//             'name' => 'portfolio',
+//             'path' => '/portfolio',
+//             'middleware' => App\Action\PortfolioAction::class,
+//             'allowed_methods' => ['GET'],
+//         ],
+//         [
+//             'name' => 'blog',
+//             'path' => '/my/blog',
+//             'middleware' => App\Action\BlogAction::class,
+//             'allowed_methods' => ['GET'],
+//         ],
+//         [
+//             'name' => 'contacts',
+//             'path' => '/my/contacts',
+//             'middleware' => App\Action\ContactAction::class,
+//             'allowed_methods' => ['GET'],
+//          ],
+//         [
+//             'name' => 'send',
+//             'path' => '/send/request',
+//             'middleware' => App\Action\SendRequestAction::class,
+//             'allowed_methods' => ['POST'],
+//         ]
+//     ],
 ];
