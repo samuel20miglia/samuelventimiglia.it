@@ -1,0 +1,113 @@
+<?php
+$this->plugin('basePath')->setBasePath('/');
+
+$this->headLink(['rel' => 'shortcut icon','type' => 'image/vnd.microsoft.icon','href' => $this->basePath('images/me.jpg')])
+    ->prependStylesheet($this->basePath('css/animsition.min.css'))
+    ->prependStylesheet($this->basePath('css/heading.css'))
+    ->prependStylesheet($this->basePath('css/jquery.mCustomScrollbar.css'))
+    ->prependStylesheet($this->basePath('css/flexslider.css'))
+    ->prependStylesheet($this->basePath('css/style.css'))
+    ->prependStylesheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    ->prependStylesheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    ->prependStylesheet('https://fonts.googleapis.com/css?family=Gabriela');
+
+$this->inlineScript()
+    ->prependFile($this->basePath('js/custom.js'))
+    ->prependFile($this->basePath('js/jquery.flexslider.js'))
+    ->prependFile($this->basePath('js/animsition.min.js'))
+    ->prependFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCwmHyKHMYUmpcl_-HEQqN1SSbav6ys_cw&v=3.exp')
+    ->prependFile($this->basePath('js/heading.js'))
+    ->prependFile($this->basePath('js/jquery.mCustomScrollbar.concat.min.js'))
+    ->prependFile($this->basePath('js/imagesloaded.js'))
+    ->prependFile($this->basePath('js/masonry-3.1.4.js'))
+    ->prependFile($this->basePath('js/masonry.filter.js'))
+    ->prependFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    ->prependFile('https://code.jquery.com/jquery-2.1.4.min.js')
+    ;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <?php echo $this->headTitle($headTitle)->setSeparator(' - ')->setAutoEscape(false) ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headLink(); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84134814-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="home">
+
+<!-- LOADER -->
+<div id="site-preloader" class="preload-complete">
+<div class="preload-position">
+        <div class="preloading">
+            <div class="preloading-line"></div>
+            <div class="preloading-break preloading-line-1"></div>
+            <div class="preloading-break preloading-line-2"></div>
+            <div class="preloading-break preloading-line-3"></div>
+            <div class="preloading-break preloading-line-4"></div>
+            <div class="preloading-break preloading-line-5"></div>
+        </div>
+    </div>
+</div><!-- Loader /- -->
+
+<div class="animsition" data-animsition-in-class="zoom-in" data-animsition-in-duration="1000" data-animsition-out-class="zoom-out" data-animsition-out-duration="500">
+	<div class="outer-container <?php echo $pageContainer; ?>-container">
+
+	 <header>
+    	<h2><?php echo $pageHeader; ?></h2>
+    	<a class="page-close" href="<?php echo $this->url('home') ?>"></a>
+  </header>
+    <div class="main-container  scroll-container">
+
+    <?php echo $this->content; ?>
+    <footer>
+        	<ul class="socialLinks">
+            <li><a href="https://www.facebook.com/samuel.ventimiglia84" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/+SamuelVentimiglia/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://github.com/samuel20miglia" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://it.linkedin.com/in/ventimigliasamuel" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+          <p>Copyright 2015 - <?= date('Y') ?>.  www.samuelventimiglia.it All rights reserved.</p>
+          </footer>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="messageModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages</h4>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+      <h3 id="modalBodyStatus" style="text-align: center;"></h3>
+        <p id="modalBodyMessage"></p><hr>
+        <p id="modalBodyDescription"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <?php echo $this->inlineScript(); ?>
+</body>
+</html>
