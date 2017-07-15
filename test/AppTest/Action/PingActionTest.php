@@ -3,6 +3,7 @@
 namespace AppTest\Action;
 
 use App\Action\PingAction;
+
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;

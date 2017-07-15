@@ -1,0 +1,183 @@
+<?php
+
+$this->plugin('basePath')->setBasePath('/');
+
+$this->headLink(['rel' => 'shortcut icon','type' => 'image/vnd.microsoft.icon','href' => $this->basePath('images/me.jpg')])
+    ->prependStylesheet($this->basePath('css/animsition.min.css'))
+    ->prependStylesheet($this->basePath('css/heading.css'))
+    ->prependStylesheet($this->basePath('css/jquery.mCustomScrollbar.css'))
+    ->prependStylesheet($this->basePath('css/flexslider.css'))
+    ->prependStylesheet($this->basePath('css/style.css'))
+    ->prependStylesheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    ->prependStylesheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    ->prependStylesheet('https://fonts.googleapis.com/css?family=Gabriela');
+
+$this->inlineScript()
+    ->prependFile($this->basePath('js/custom.js'))
+    ->prependFile($this->basePath('js/jquery.flexslider.js'))
+    ->prependFile($this->basePath('js/animsition.min.js'))
+    ->prependFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCwmHyKHMYUmpcl_-HEQqN1SSbav6ys_cw&v=3.exp')
+    ->prependFile($this->basePath('js/heading.js'))
+    ->prependFile($this->basePath('js/jquery.mCustomScrollbar.concat.min.js'))
+    ->prependFile($this->basePath('js/imagesloaded.js'))
+    ->prependFile($this->basePath('js/masonry-3.1.4.js'))
+    ->prependFile($this->basePath('js/masonry.filter.js'))
+    ->prependFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    ->prependFile('https://code.jquery.com/jquery-2.1.4.min.js')
+    ;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9889853002956388",
+    enable_page_level_ads: true
+  });
+</script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <?php echo $this->headTitle(' samuelventimiglia.it')->setSeparator(' - ')->setAutoEscape(false) ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headLink(); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84134814-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="home">
+
+<!-- LOADER -->
+<div id="site-preloader" class="preload-complete">
+<div class="preload-position">
+        <div class="preloading">
+            <div class="preloading-line"></div>
+            <div class="preloading-break preloading-line-1"></div>
+            <div class="preloading-break preloading-line-2"></div>
+            <div class="preloading-break preloading-line-3"></div>
+            <div class="preloading-break preloading-line-4"></div>
+            <div class="preloading-break preloading-line-5"></div>
+        </div>
+    </div>
+</div><!-- Loader /- -->
+
+<ul class="grid-nav">
+    <li class="animsition" data-animsition-in-class="fade-in-down-lg" data-animsition-in-duration="300" data-animsition-out-class="zoom-out-lg" data-animsition-out-duration="500">
+    	<div class="head">Ventimiglia Samuel</div>
+    </li>
+	<a href="https://github.com/samuel20miglia" onclick="window.open(this.href)"><img style="z-index: 5000; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+    <li class="animsition" data-animsition-in-class="fade-in-down-lg" data-animsition-in-duration="300" data-animsition-out-class="zoom-out-lg" data-animsition-out-duration="500">
+    	<a href="<?php echo $this->url('about')?>" class="animsition-link">
+  		<div>
+        	<div class="grid-icon"><i class="fa fa-user-secret"></i></div>
+  			<h2>About</h2>
+            <p class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">PhP Developer</b>
+                    <b>10+ Years Experience</b>
+                    <b>Back-end Developer</b>
+                    <b>Zend Framework Expert</b>
+                    <b>Realtime application Expert</b>
+                </span>
+            </p>
+            <em>view</em>
+       </div>
+       </a>
+   </li>
+
+   <li class="animsition" data-animsition-in-class="fade-in-down-lg" data-animsition-in-duration="300" data-animsition-out-class="zoom-out-lg" data-animsition-out-duration="500">
+    	<a href="<?php echo $this->url('resume')?>" class="animsition-link">
+  		<div>
+        	<div class="grid-icon"><i class="fa fa-file-text"></i></div>
+  			<h2>Resume</h2>
+            <p class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b>Education</b>
+                    <b>Experiences</b>
+                    <b class="is-visible">Skills</b>
+                </span>
+            </p>
+            <em>view</em>
+       </div>
+       </a>
+   </li>
+
+   <li class="animsition" data-animsition-in-class="fade-in-up-lg" data-animsition-in-duration="300" data-animsition-out-class="zoom-out-lg" data-animsition-out-duration="500">
+    	<a href="<?php echo $this->url('portfolio')?>" class="animsition-link">
+  		<div>
+        	<div class="grid-icon"><i class="fa fa-suitcase"></i></div>
+  			<h2>Portfolio</h2>
+            <p class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Projects</b>
+                    <b>Clients</b>
+                    <b>Testimonials</b>
+                </span>
+            </p>
+            <em>view</em>
+       </div>
+       </a>
+   </li>
+
+   <li class="animsition" data-animsition-in-class="fade-in-up-lg" data-animsition-in-duration="300" data-animsition-out-class="zoom-out-lg" data-animsition-out-duration="500">
+    	<a href="<?php // echo $this->url('blog')?>" class="animsition-link">
+  		<div>
+        	<div class="grid-icon"><i class="fa fa-tags"></i></div>
+  			<h2>SDKs and Tools</h2>
+            <p class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Awesome Tools</b>
+                    <b>Many Categories</b>
+                </span>
+            </p>
+            <em>work in progress</em>
+       </div>
+       </a>
+   </li>
+
+
+   <li class="animsition" data-animsition-in-class="fade-in-up-lg" data-animsition-in-duration="300" data-animsition-out-class="zoom-out-lg" data-animsition-out-duration="500">
+    	<a href="<?php echo $this->url('contacts')?>" class="animsition-link">
+  		<div>
+        	<div class="grid-icon"><i class="fa fa-phone"></i></div>
+  			<h2>Contact</h2>
+            <p class="cd-headline clip is-full-width">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Say Hello</b>
+                    <b>Contact Details</b>
+                    <b>Social Links</b>
+                </span>
+            </p>
+            <em>view</em>
+       </div>
+       </a>
+   </li>
+
+</ul>
+    <!--<div class="app-content">
+        <main class="container">
+            <?php //echo $this->content ?>
+        </main>
+    </div>-->
+
+   <!-- <footer class="app-footer">
+        <div class="container">
+            <hr />
+            <p>
+                &copy; 2005 - <?php //echo date('Y') ?> by Ventimiglia Samuel Giuseppe. All rights reserved.
+            </p>
+        </div>
+    </footer> -->
+
+
+    <?php echo $this->inlineScript(); ?>
+</body>
+</html>
